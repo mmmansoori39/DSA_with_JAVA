@@ -1,4 +1,4 @@
-public class ArithmeticOperation {
+public class Operators {
     public static void main(String[] args) {
         // unary operators  ++  &  --
         // binary opeators + - * %
