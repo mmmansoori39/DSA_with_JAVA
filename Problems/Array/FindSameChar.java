@@ -2,8 +2,8 @@ import java.util.*;
 
 public class FindSameChar{
 
-    public static void findSameChar (char arr[][], n){
-        if
+    public static void findSameChar (char arr[][]){
+
     }
 
     public static void main(String args[]{
