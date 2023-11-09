@@ -7,7 +7,7 @@ public class ClearBits {
         int n = 5;
         int pos = 2;
         int bitMask = 1 << pos;
-        int notBitMAsk = ~bitMask;
+        int notBitMAsk = ~bitMask;  // ~ is used for NOT logical
 
         int output = notBitMAsk & n;
         System.out.println(output);
