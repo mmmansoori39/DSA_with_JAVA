@@ -1,5 +1,8 @@
 public class PrintReverseStrings {
     public static void reverseString(String str, int idx){
+
+        // time complexity is O(n)
+
         // base case
         if ( idx == 0){
             System.out.print(str.charAt(idx));
