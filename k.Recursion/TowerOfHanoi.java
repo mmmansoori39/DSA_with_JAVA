@@ -1,6 +1,10 @@
 public class TowerOfHanoi {
 
     public static void towerOfHanoi( int n, String src, String helper, String dest ){
+
+        // time complexity is 2^n
+
+
         // base case
         if ( n==1){
             System.out.println("Transfer disc "+ n + " from "+ src + " to " + dest);
