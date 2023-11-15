@@ -1,3 +1,5 @@
+// check if array is sorted ( Strictly increasing)
+
 public class FindStrictedSortedArray {
     public static boolean isSorted(int arr[], int idx){
         // base case
