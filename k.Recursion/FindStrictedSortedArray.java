@@ -2,6 +2,7 @@
 
 public class FindStrictedSortedArray {
     public static boolean isSorted(int arr[], int idx){
+        // time complexity O(n)
         // base case
         if ( idx == arr.length-1){
             return true;
