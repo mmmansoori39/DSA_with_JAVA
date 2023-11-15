@@ -12,6 +12,7 @@ public class FindElemFirstnLast {
         if ( idx == str.length()){
             System.out.println(first);
             System.out.println(last);
+            return;
         }
         char currElem = str.charAt(idx);
         if ( currElem == element){
