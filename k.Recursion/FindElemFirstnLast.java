@@ -5,6 +5,9 @@ public class FindElemFirstnLast {
     public static int last = -1;
 
     public static void elementOccurance( String str, int idx, char element){
+
+        // time complexity is O(n)
+
         // base case
         if ( idx == str.length()){
             System.out.println(first);
