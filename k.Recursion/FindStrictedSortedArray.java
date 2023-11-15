@@ -7,9 +7,7 @@ public class FindStrictedSortedArray {
         if ( arr[idx] >= arr[idx+1]){
             return false;
         }
-        else{
-            return isSorted(arr, idx+1);
-        }
+        return isSorted(arr, idx+1);
     }
     public static void main( String args[]){
         int arr[] = {1,2,3,4,3,5};
