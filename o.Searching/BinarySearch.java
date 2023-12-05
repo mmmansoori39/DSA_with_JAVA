@@ -1,5 +1,8 @@
 public class BinarySearch {
     public static int binarySearch(int arr[], int key, int n) {
+
+        // time complexity is O(logn)
+
         int start = 0;
         int end = n - 1;
         int mid = start + (end - start) / 2;
