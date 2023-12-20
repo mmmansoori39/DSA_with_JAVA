@@ -1,4 +1,3 @@
-package Loop;
 import java.util.*;
 
 public class UserTable {
