@@ -58,7 +58,20 @@ public class BAbberStar {
 
     }
 
-    
+    public static void charAlpha(int n){
+        int count = 1;
+        for ( int i=1; i<=n; i++){
+            for ( int j=1; j<=n; j++){
+                char ch = (char)('A' + count -1);
+                count ++;
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
+
+    }
+
+
 
 
 
@@ -69,6 +82,7 @@ public class BAbberStar {
         // triPattern(n);
         // triNum(n);
         // reverseTriNum(n);
-        charSerial(n);
+        // charSerial(n);
+        charAlpha(n);
     }
 }
