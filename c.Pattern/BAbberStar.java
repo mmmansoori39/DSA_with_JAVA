@@ -76,8 +76,8 @@ public class BAbberStar {
             for (int j = 0; j < n; j++) {
                 // Print '*' at the borders of 'M'
                 if (j == 0 || j == n - 1 // Left and right edges of 'M'
-                    || (i == j && i <= n / 2) // Left diagonal of 'M'
-                    || (i + j == n - 1 && i <= n / 2)) { // Right diagonal of 'M'
+                    || (i == j && i < n / 2) // Left diagonal of 'M'
+                    || (i + j == n - 1 && i < n / 2)) { // Right diagonal of 'M'
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
