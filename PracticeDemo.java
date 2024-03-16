@@ -1,55 +1,55 @@
-public class PracticeDemo {
+public class PracticeDemo{
 
-    public static void swapAlter(int arr[]){
-        int n =  arr.length;
+    public static boolean isPalindrome( String str){
 
-        for ( int i =0 ; i<n; i++){
-            if ( i+1 < n){
-                int temp = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = temp;
-                i++;
+        int right = 0, left = str.length() - 1;
+
+         while (right< left) {
+            if(str.charAt(right) == str.charAt(left)){
+                right++;
+                left--;
+            } else{
+                return false;
             }
+         }
+
+         return true;
+
+    }
+
+    public static String reverseString( String str){
+
+        char[] chars = str.toCharArray();
+
+        int s=0, e = chars.length - 1;
+
+        while (s<e) {
+            
+            char temp = chars[s];
+            chars[s] = chars[e];
+            chars[e] = temp;
+            s++;
+            e--;
         }
 
-        // printing swaped array
-        for ( int i =0; i<n ; i++){
-            System.out.print(arr[i]+" ");
-        }
+        return new String(chars);
     }
 
-    public static void findUnique(int arr[]){
-        int ans=0;
-        for( int i=0; i<arr.length; i++){
-            ans = ans^arr[i];
-        }   
-        System.out.println(ans);
-    }
+    public static void main(String[] args) {
+        String str = "jasmine";
 
-    public static void printMpattern(int n){
-        for( int i=0; i<n; i++){
-            for ( int j=0; j<n; j++){
-                if(j == 0 || j == n-1 ||
-                i == j && i<n/2 ||
-                i+j == n-1 && i<n/2
-                ){
-                    System.out.print("*");
-                }
-                else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
-    }
+        // boolean isPalindrome = isPalindrome(str);
 
+        // if(isPalindrome){
+        //     System.out.println("yes");
+        // } else{
+        //     System.out.println("No");
+        // }
 
-    public static void main(String args[]) {
-        int arr[] = { 2, 3, 5, 7, 4, 9, 12, 4, 23 };
-        int arr1[] = {2,3,4,6,7,2,6,7,3};
-        // swapAlter(arr);
-        // findUnique(arr1);
-        printMpattern(8);
+        String result = reverseString(str);
+        System.out.println(result);
 
     }
+
+    
 }
