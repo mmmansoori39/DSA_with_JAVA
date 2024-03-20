@@ -1,6 +1,6 @@
 public class BitwiseOperation {
     public static void main(String[] args) {
-        int a = 3, b = 71;
+        int a = 3, b = 4;
         int result = a | b;
         int result1 = ~a;
         // System.out.println(result);
@@ -10,7 +10,7 @@ public class BitwiseOperation {
         while( b!=0){
             int bit = b&1;
             b>>>=1;
-            System.out.println(bit);
+            System.out.print(bit);
             i++;
         }
     }

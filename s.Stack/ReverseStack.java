@@ -11,6 +11,7 @@ public class ReverseStack {
         }
 
         int top = s.pop();
+
         pushAtButton(data, s);
         s.push(top);
     }
@@ -24,6 +25,7 @@ public class ReverseStack {
 
         int top = s.pop();
         reverseStack(s);
+
         pushAtButton(top, s);
     }
     public static void main(String[] args) {
@@ -36,11 +38,10 @@ public class ReverseStack {
         s.push(7);
         s.push(8);
 
+        System.out.println(s);
+
         reverseStack(s);
 
-        while (!s.isEmpty()) {
-            System.out.print(s.peek()+" ");
-            s.pop();
-        }
+    //    System.out.println(s);
     }
 }

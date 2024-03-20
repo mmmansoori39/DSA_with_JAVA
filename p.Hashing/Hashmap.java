@@ -12,6 +12,8 @@ public class Hashmap {
         
         System.out.println(map);
 
+        System.out.println(map.get("USA"));
+
         for( Map.Entry<String, Integer> e : map.entrySet()){
             System.out.println(e.getKey());
             System.out.println(e.getValue());

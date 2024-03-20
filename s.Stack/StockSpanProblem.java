@@ -9,17 +9,17 @@ public class StockSpanProblem {
 
         for(int i=0; i<n; i++){
             if(s.isEmpty()){
-                list.add(i-s.size()+1);
+                list.add(1);
             }
             else if( arr[i] < s.peek()){
-                list.add(i-s.size()+1);
+                list.add(1);
             }
             else{
                 while (!s.isEmpty() && arr[i] >= s.peek()) {
                     s.pop();
                 }
                 if(s.isEmpty()){
-                    list.add(i-s.size());
+                    list.add(i-s.size()+1);
                 }
                 else{
                     list.add(i-s.size()+1);

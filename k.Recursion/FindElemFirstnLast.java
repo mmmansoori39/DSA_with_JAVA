@@ -26,7 +26,7 @@ public class FindElemFirstnLast {
         elementOccurance(str, idx+1, element);
     }
     public static void main(String args[]) {
-        String str = "abcsaba";
-        elementOccurance(str, 0, 'a');
+        String str = "ababaab";
+        elementOccurance(str, 0, 'b');
     }
 }
